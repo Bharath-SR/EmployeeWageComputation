@@ -27,16 +27,17 @@ public class EmployeeWage {
 		int partTimeWage= wagePerHour*partTime;
 		
 
-		if(attendance==1) {
+		switch(attendance) {
+		case 1:
 			System.out.println("Employee is Present");
 			System.out.println("Employee Wage is:"+wage);
-		}
-		else if(attendance==2) {
+			break;
+		case 2:
 			System.out.println("Employee is Present Part Time");
 			System.out.println("Part Time  Employee Wage is:"+partTimeWage);
-		}
-		else {
+		default:
 			System.out.println("Employee is absent");
+			
 		}
 	}
 
